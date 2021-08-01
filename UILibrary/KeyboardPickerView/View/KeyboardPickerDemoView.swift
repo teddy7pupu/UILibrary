@@ -26,8 +26,20 @@ class KeyboardPickerDemoView: UIView {
         let field = UITextField()
         field.textColor = .black
         field.font = UIFont.systemFont(ofSize: 14, weight: .medium)
-        field.placeholder = "請選擇日期"
+        field.placeholder = "請選擇年月"
         field.inputView = yearPickerView
+        field.layer.borderWidth = 1
+        field.layer.borderColor = UIColor.gray.cgColor
+        field.textAlignment = .center
+        return field
+    }()
+    
+    lazy var dateField: UITextField = {
+        let field = UITextField()
+        field.textColor = .black
+        field.font = UIFont.systemFont(ofSize: 14, weight: .medium)
+        field.placeholder = "請選擇年月日"
+        field.inputView = datePickerView
         field.layer.borderWidth = 1
         field.layer.borderColor = UIColor.gray.cgColor
         field.textAlignment = .center
@@ -38,6 +50,8 @@ class KeyboardPickerDemoView: UIView {
     
     let yearPickerView = KeyboardPickerView(pickerType: .monthYear, isNeedToolbar: true)
 
+    let datePickerView = KeyboardDatePickerView(datePickerMode: .date, isNeedToolbar: true)
+    
     // Life cycle
     override init(frame: CGRect) {
         
@@ -77,6 +91,13 @@ private extension KeyboardPickerDemoView {
         yearField.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
             make.top.equalTo(normalField.snp.bottom).offset(20)
+            make.size.equalTo(CGSize(width: 180, height: 30))
+        }
+        
+        addSubview(dateField)
+        dateField.snp.makeConstraints { (make) in
+            make.centerX.equalToSuperview()
+            make.top.equalTo(yearField.snp.bottom).offset(20)
             make.size.equalTo(CGSize(width: 180, height: 30))
         }
         
