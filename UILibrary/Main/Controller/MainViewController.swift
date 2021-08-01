@@ -14,7 +14,8 @@ class MainViewController: BaseViewController {
 
     // property
     private let mainModels: [MainModel] = [
-        MainModel(vc: KeyboardPickerDemoViewController(), name: "Picker View")
+        MainModel(vc: KeyboardPickerDemoViewController(), name: "Picker View"),
+        MainModel(vc: InfiniteLoopDemoViewController(), name: "輪播")
     ]
 
     // Life cycle

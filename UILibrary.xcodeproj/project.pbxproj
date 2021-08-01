@@ -12,6 +12,10 @@
 		9FAA0B8426B547700035532F /* KeyboardPickerDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA0B8326B547700035532F /* KeyboardPickerDemoView.swift */; };
 		9FAA0B8726B547840035532F /* KeyboardPickerDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA0B8626B547840035532F /* KeyboardPickerDemoViewController.swift */; };
 		9FAA0B8D26B693730035532F /* KeyboardDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA0B8C26B693730035532F /* KeyboardDatePickerView.swift */; };
+		9FAA0B9626B69B3C0035532F /* InfiniteLoopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA0B9526B69B3C0035532F /* InfiniteLoopView.swift */; };
+		9FAA0B9926B6A6C60035532F /* InfiniteLoopDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA0B9826B6A6C60035532F /* InfiniteLoopDemoView.swift */; };
+		9FAA0BA026B6A77B0035532F /* InfiniteLoopDemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA0B9F26B6A77B0035532F /* InfiniteLoopDemoCell.swift */; };
+		9FAA0BA326B6A9520035532F /* InfiniteLoopDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA0BA226B6A9520035532F /* InfiniteLoopDemoViewController.swift */; };
 		9FDDCEC826B5303F0008C20B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDCEC726B5303F0008C20B /* AppDelegate.swift */; };
 		9FDDCED126B530400008C20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FDDCED026B530400008C20B /* Assets.xcassets */; };
 		9FDDCED426B530400008C20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FDDCED226B530400008C20B /* LaunchScreen.storyboard */; };
@@ -29,6 +33,10 @@
 		9FAA0B8326B547700035532F /* KeyboardPickerDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPickerDemoView.swift; sourceTree = "<group>"; };
 		9FAA0B8626B547840035532F /* KeyboardPickerDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPickerDemoViewController.swift; sourceTree = "<group>"; };
 		9FAA0B8C26B693730035532F /* KeyboardDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDatePickerView.swift; sourceTree = "<group>"; };
+		9FAA0B9526B69B3C0035532F /* InfiniteLoopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteLoopView.swift; sourceTree = "<group>"; };
+		9FAA0B9826B6A6C60035532F /* InfiniteLoopDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteLoopDemoView.swift; sourceTree = "<group>"; };
+		9FAA0B9F26B6A77B0035532F /* InfiniteLoopDemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteLoopDemoCell.swift; sourceTree = "<group>"; };
+		9FAA0BA226B6A9520035532F /* InfiniteLoopDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteLoopDemoViewController.swift; sourceTree = "<group>"; };
 		9FDDCEC426B5303F0008C20B /* UILibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UILibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FDDCEC726B5303F0008C20B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FDDCED026B530400008C20B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,14 +79,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		9FAA0B7726B53CEA0035532F /* KeyboardPickerView */ = {
+		9FAA0B7726B53CEA0035532F /* KeyboardPicker */ = {
 			isa = PBXGroup;
 			children = (
 				9FAA0B7A26B53D4A0035532F /* Controller */,
 				9FAA0B7926B53D450035532F /* View */,
 				9FAA0B7826B53D330035532F /* Source */,
 			);
-			path = KeyboardPickerView;
+			path = KeyboardPicker;
 			sourceTree = "<group>";
 		};
 		9FAA0B7826B53D330035532F /* Source */ = {
@@ -106,6 +114,41 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		9FAA0B9126B69AE90035532F /* InfiniteLoop */ = {
+			isa = PBXGroup;
+			children = (
+				9FAA0B9326B69B0B0035532F /* Controller */,
+				9FAA0B9226B69B050035532F /* View */,
+				9FAA0B9426B69B140035532F /* Source */,
+			);
+			path = InfiniteLoop;
+			sourceTree = "<group>";
+		};
+		9FAA0B9226B69B050035532F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FAA0B9826B6A6C60035532F /* InfiniteLoopDemoView.swift */,
+				9FAA0B9F26B6A77B0035532F /* InfiniteLoopDemoCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9FAA0B9326B69B0B0035532F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9FAA0BA226B6A9520035532F /* InfiniteLoopDemoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9FAA0B9426B69B140035532F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9FAA0B9526B69B3C0035532F /* InfiniteLoopView.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		9FDDCEBB26B5303F0008C20B = {
 			isa = PBXGroup;
 			children = (
@@ -127,11 +170,12 @@
 		9FDDCEC626B5303F0008C20B /* UILibrary */ = {
 			isa = PBXGroup;
 			children = (
+				9FAA0B9126B69AE90035532F /* InfiniteLoop */,
 				9FDDCEC726B5303F0008C20B /* AppDelegate.swift */,
 				9FDDCED226B530400008C20B /* LaunchScreen.storyboard */,
 				9FDDCEE826B533EF0008C20B /* Base */,
 				9FDDCF0526B539340008C20B /* Main */,
-				9FAA0B7726B53CEA0035532F /* KeyboardPickerView */,
+				9FAA0B7726B53CEA0035532F /* KeyboardPicker */,
 				9FDDCEDF26B531330008C20B /* Resource */,
 			);
 			path = UILibrary;
@@ -305,7 +349,11 @@
 				9FAA0B8726B547840035532F /* KeyboardPickerDemoViewController.swift in Sources */,
 				9FAA0B8D26B693730035532F /* KeyboardDatePickerView.swift in Sources */,
 				9FDDCEF426B534BB0008C20B /* MainView.swift in Sources */,
+				9FAA0BA026B6A77B0035532F /* InfiniteLoopDemoCell.swift in Sources */,
+				9FAA0B9626B69B3C0035532F /* InfiniteLoopView.swift in Sources */,
+				9FAA0BA326B6A9520035532F /* InfiniteLoopDemoViewController.swift in Sources */,
 				9FAA0B8126B53F300035532F /* KeyboardPickerView.swift in Sources */,
+				9FAA0B9926B6A6C60035532F /* InfiniteLoopDemoView.swift in Sources */,
 				9FDDCEC826B5303F0008C20B /* AppDelegate.swift in Sources */,
 				9FDDCF0126B536FB0008C20B /* MainModel.swift in Sources */,
 				9FDDCEFE26B5365D0008C20B /* MainViewController.swift in Sources */,
