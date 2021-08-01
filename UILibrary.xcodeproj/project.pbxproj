@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		36265DEFDB83D946F5365A21 /* Pods_UILibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9F94D30A6AF5262A38369B /* Pods_UILibrary.framework */; };
+		9FAA0B8126B53F300035532F /* KeyboardPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA0B8026B53F300035532F /* KeyboardPickerView.swift */; };
+		9FAA0B8426B547700035532F /* KeyboardPickerDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA0B8326B547700035532F /* KeyboardPickerDemoView.swift */; };
+		9FAA0B8726B547840035532F /* KeyboardPickerDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA0B8626B547840035532F /* KeyboardPickerDemoViewController.swift */; };
+		9FAA0B8D26B693730035532F /* KeyboardDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA0B8C26B693730035532F /* KeyboardDatePickerView.swift */; };
 		9FDDCEC826B5303F0008C20B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDCEC726B5303F0008C20B /* AppDelegate.swift */; };
 		9FDDCED126B530400008C20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FDDCED026B530400008C20B /* Assets.xcassets */; };
 		9FDDCED426B530400008C20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FDDCED226B530400008C20B /* LaunchScreen.storyboard */; };
@@ -21,6 +25,10 @@
 /* Begin PBXFileReference section */
 		2430C6784E49FA95BCFE9A05 /* Pods-UILibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UILibrary.debug.xcconfig"; path = "Target Support Files/Pods-UILibrary/Pods-UILibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		3F8DDF6B560126C3AA03F194 /* Pods-UILibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UILibrary.release.xcconfig"; path = "Target Support Files/Pods-UILibrary/Pods-UILibrary.release.xcconfig"; sourceTree = "<group>"; };
+		9FAA0B8026B53F300035532F /* KeyboardPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPickerView.swift; sourceTree = "<group>"; };
+		9FAA0B8326B547700035532F /* KeyboardPickerDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPickerDemoView.swift; sourceTree = "<group>"; };
+		9FAA0B8626B547840035532F /* KeyboardPickerDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPickerDemoViewController.swift; sourceTree = "<group>"; };
+		9FAA0B8C26B693730035532F /* KeyboardDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDatePickerView.swift; sourceTree = "<group>"; };
 		9FDDCEC426B5303F0008C20B /* UILibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UILibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FDDCEC726B5303F0008C20B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FDDCED026B530400008C20B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +71,41 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9FAA0B7726B53CEA0035532F /* KeyboardPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				9FAA0B7A26B53D4A0035532F /* Controller */,
+				9FAA0B7926B53D450035532F /* View */,
+				9FAA0B7826B53D330035532F /* Source */,
+			);
+			path = KeyboardPickerView;
+			sourceTree = "<group>";
+		};
+		9FAA0B7826B53D330035532F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9FAA0B8026B53F300035532F /* KeyboardPickerView.swift */,
+				9FAA0B8C26B693730035532F /* KeyboardDatePickerView.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		9FAA0B7926B53D450035532F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FAA0B8326B547700035532F /* KeyboardPickerDemoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9FAA0B7A26B53D4A0035532F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9FAA0B8626B547840035532F /* KeyboardPickerDemoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		9FDDCEBB26B5303F0008C20B = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +131,7 @@
 				9FDDCED226B530400008C20B /* LaunchScreen.storyboard */,
 				9FDDCEE826B533EF0008C20B /* Base */,
 				9FDDCF0526B539340008C20B /* Main */,
+				9FAA0B7726B53CEA0035532F /* KeyboardPickerView */,
 				9FDDCEDF26B531330008C20B /* Resource */,
 			);
 			path = UILibrary;
@@ -258,11 +302,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FAA0B8726B547840035532F /* KeyboardPickerDemoViewController.swift in Sources */,
+				9FAA0B8D26B693730035532F /* KeyboardDatePickerView.swift in Sources */,
 				9FDDCEF426B534BB0008C20B /* MainView.swift in Sources */,
+				9FAA0B8126B53F300035532F /* KeyboardPickerView.swift in Sources */,
 				9FDDCEC826B5303F0008C20B /* AppDelegate.swift in Sources */,
 				9FDDCF0126B536FB0008C20B /* MainModel.swift in Sources */,
 				9FDDCEFE26B5365D0008C20B /* MainViewController.swift in Sources */,
 				9FDDCEED26B5346A0008C20B /* BaseViewController.swift in Sources */,
+				9FAA0B8426B547700035532F /* KeyboardPickerDemoView.swift in Sources */,
 				9FDDCEFB26B535790008C20B /* MainCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +454,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E3CE76ZT7U;
 				INFOPLIST_FILE = "$(SRCROOT)/UILibrary/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -426,6 +475,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E3CE76ZT7U;
 				INFOPLIST_FILE = "$(SRCROOT)/UILibrary/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
