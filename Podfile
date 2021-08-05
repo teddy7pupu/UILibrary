@@ -8,4 +8,6 @@ target 'UILibrary' do
   # Pods for UILibrary
   pod 'SnapKit'
   pod 'SwifterSwift'
+  pod 'HMSegmentedControl'
+  
 end

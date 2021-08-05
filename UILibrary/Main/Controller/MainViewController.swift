@@ -16,7 +16,8 @@ class MainViewController: BaseViewController {
     private let mainModels: [MainModel] = [
         MainModel(vc: KeyboardPickerDemoViewController(), name: "Picker View"),
         MainModel(vc: InfiniteLoopDemoViewController(), name: "輪播"),
-        MainModel(vc: ThanosButtonDemoViewController(), name: "薩諾斯按鈕")
+        MainModel(vc: ThanosButtonDemoViewController(), name: "薩諾斯按鈕"),
+        MainModel(vc: NestedScrollViewController(), name: "巢狀式 scroll view")
     ]
 
     // Life cycle
