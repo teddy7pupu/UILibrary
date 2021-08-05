@@ -12,6 +12,9 @@
 		9F6CD13926BBCB7C0037F8EA /* ThanosButtonStyleTemplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CD13726BBCB7C0037F8EA /* ThanosButtonStyleTemplete.swift */; };
 		9F6CD13C26BBCC370037F8EA /* ThanosButtonDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CD13B26BBCC370037F8EA /* ThanosButtonDemoView.swift */; };
 		9F6CD13F26BBCC440037F8EA /* ThanosButtonDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CD13E26BBCC440037F8EA /* ThanosButtonDemoViewController.swift */; };
+		9F6CD14826BBD3FA0037F8EA /* NestedScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CD14726BBD3FA0037F8EA /* NestedScrollView.swift */; };
+		9F6CD14C26BBD42F0037F8EA /* NestedScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CD14A26BBD42F0037F8EA /* NestedScrollViewController.swift */; };
+		9F6CD14D26BBD42F0037F8EA /* NestedSubScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CD14B26BBD42F0037F8EA /* NestedSubScrollViewController.swift */; };
 		9FAA0B8126B53F300035532F /* KeyboardPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA0B8026B53F300035532F /* KeyboardPickerView.swift */; };
 		9FAA0B8426B547700035532F /* KeyboardPickerDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA0B8326B547700035532F /* KeyboardPickerDemoView.swift */; };
 		9FAA0B8726B547840035532F /* KeyboardPickerDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA0B8626B547840035532F /* KeyboardPickerDemoViewController.swift */; };
@@ -37,6 +40,9 @@
 		9F6CD13726BBCB7C0037F8EA /* ThanosButtonStyleTemplete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosButtonStyleTemplete.swift; sourceTree = "<group>"; };
 		9F6CD13B26BBCC370037F8EA /* ThanosButtonDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThanosButtonDemoView.swift; sourceTree = "<group>"; };
 		9F6CD13E26BBCC440037F8EA /* ThanosButtonDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThanosButtonDemoViewController.swift; sourceTree = "<group>"; };
+		9F6CD14726BBD3FA0037F8EA /* NestedScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NestedScrollView.swift; sourceTree = "<group>"; };
+		9F6CD14A26BBD42F0037F8EA /* NestedScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NestedScrollViewController.swift; sourceTree = "<group>"; };
+		9F6CD14B26BBD42F0037F8EA /* NestedSubScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NestedSubScrollViewController.swift; sourceTree = "<group>"; };
 		9FAA0B8026B53F300035532F /* KeyboardPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPickerView.swift; sourceTree = "<group>"; };
 		9FAA0B8326B547700035532F /* KeyboardPickerDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPickerDemoView.swift; sourceTree = "<group>"; };
 		9FAA0B8626B547840035532F /* KeyboardPickerDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPickerDemoViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +124,32 @@
 			isa = PBXGroup;
 			children = (
 				9F6CD13E26BBCC440037F8EA /* ThanosButtonDemoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9F6CD14326BBD3DA0037F8EA /* NestedScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				9F6CD14626BBD3F00037F8EA /* Controller */,
+				9F6CD14426BBD3E30037F8EA /* Source */,
+			);
+			path = NestedScrollView;
+			sourceTree = "<group>";
+		};
+		9F6CD14426BBD3E30037F8EA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9F6CD14726BBD3FA0037F8EA /* NestedScrollView.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		9F6CD14626BBD3F00037F8EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9F6CD14A26BBD42F0037F8EA /* NestedScrollViewController.swift */,
+				9F6CD14B26BBD42F0037F8EA /* NestedSubScrollViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -220,6 +252,7 @@
 				9FAA0B9126B69AE90035532F /* InfiniteLoop */,
 				9FAA0B7726B53CEA0035532F /* KeyboardPicker */,
 				9F6CD13226BBCB480037F8EA /* ThanosButton */,
+				9F6CD14326BBD3DA0037F8EA /* NestedScrollView */,
 				9FDDCEDF26B531330008C20B /* Resource */,
 			);
 			path = UILibrary;
@@ -403,11 +436,14 @@
 				9FAA0B8126B53F300035532F /* KeyboardPickerView.swift in Sources */,
 				9FAA0B9926B6A6C60035532F /* InfiniteLoopDemoView.swift in Sources */,
 				9FDDCEC826B5303F0008C20B /* AppDelegate.swift in Sources */,
+				9F6CD14D26BBD42F0037F8EA /* NestedSubScrollViewController.swift in Sources */,
 				9FDDCF0126B536FB0008C20B /* MainModel.swift in Sources */,
 				9FDDCEFE26B5365D0008C20B /* MainViewController.swift in Sources */,
 				9FDDCEED26B5346A0008C20B /* BaseViewController.swift in Sources */,
+				9F6CD14C26BBD42F0037F8EA /* NestedScrollViewController.swift in Sources */,
 				9FAA0B8426B547700035532F /* KeyboardPickerDemoView.swift in Sources */,
 				9FDDCEFB26B535790008C20B /* MainCell.swift in Sources */,
+				9F6CD14826BBD3FA0037F8EA /* NestedScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
