@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		36265DEFDB83D946F5365A21 /* Pods_UILibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9F94D30A6AF5262A38369B /* Pods_UILibrary.framework */; };
+		9F6CD13826BBCB7C0037F8EA /* ThanosButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CD13626BBCB7C0037F8EA /* ThanosButton.swift */; };
+		9F6CD13926BBCB7C0037F8EA /* ThanosButtonStyleTemplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CD13726BBCB7C0037F8EA /* ThanosButtonStyleTemplete.swift */; };
+		9F6CD13C26BBCC370037F8EA /* ThanosButtonDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CD13B26BBCC370037F8EA /* ThanosButtonDemoView.swift */; };
+		9F6CD13F26BBCC440037F8EA /* ThanosButtonDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6CD13E26BBCC440037F8EA /* ThanosButtonDemoViewController.swift */; };
 		9FAA0B8126B53F300035532F /* KeyboardPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA0B8026B53F300035532F /* KeyboardPickerView.swift */; };
 		9FAA0B8426B547700035532F /* KeyboardPickerDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA0B8326B547700035532F /* KeyboardPickerDemoView.swift */; };
 		9FAA0B8726B547840035532F /* KeyboardPickerDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA0B8626B547840035532F /* KeyboardPickerDemoViewController.swift */; };
@@ -29,6 +33,10 @@
 /* Begin PBXFileReference section */
 		2430C6784E49FA95BCFE9A05 /* Pods-UILibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UILibrary.debug.xcconfig"; path = "Target Support Files/Pods-UILibrary/Pods-UILibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		3F8DDF6B560126C3AA03F194 /* Pods-UILibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UILibrary.release.xcconfig"; path = "Target Support Files/Pods-UILibrary/Pods-UILibrary.release.xcconfig"; sourceTree = "<group>"; };
+		9F6CD13626BBCB7C0037F8EA /* ThanosButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosButton.swift; sourceTree = "<group>"; };
+		9F6CD13726BBCB7C0037F8EA /* ThanosButtonStyleTemplete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanosButtonStyleTemplete.swift; sourceTree = "<group>"; };
+		9F6CD13B26BBCC370037F8EA /* ThanosButtonDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThanosButtonDemoView.swift; sourceTree = "<group>"; };
+		9F6CD13E26BBCC440037F8EA /* ThanosButtonDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThanosButtonDemoViewController.swift; sourceTree = "<group>"; };
 		9FAA0B8026B53F300035532F /* KeyboardPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPickerView.swift; sourceTree = "<group>"; };
 		9FAA0B8326B547700035532F /* KeyboardPickerDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPickerDemoView.swift; sourceTree = "<group>"; };
 		9FAA0B8626B547840035532F /* KeyboardPickerDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardPickerDemoViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +85,41 @@
 				3F8DDF6B560126C3AA03F194 /* Pods-UILibrary.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		9F6CD13226BBCB480037F8EA /* ThanosButton */ = {
+			isa = PBXGroup;
+			children = (
+				9F6CD13526BBCB610037F8EA /* Controller */,
+				9F6CD13426BBCB5C0037F8EA /* View */,
+				9F6CD13326BBCB510037F8EA /* Source */,
+			);
+			path = ThanosButton;
+			sourceTree = "<group>";
+		};
+		9F6CD13326BBCB510037F8EA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9F6CD13626BBCB7C0037F8EA /* ThanosButton.swift */,
+				9F6CD13726BBCB7C0037F8EA /* ThanosButtonStyleTemplete.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		9F6CD13426BBCB5C0037F8EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F6CD13B26BBCC370037F8EA /* ThanosButtonDemoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9F6CD13526BBCB610037F8EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9F6CD13E26BBCC440037F8EA /* ThanosButtonDemoViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		9FAA0B7726B53CEA0035532F /* KeyboardPicker */ = {
@@ -170,12 +213,13 @@
 		9FDDCEC626B5303F0008C20B /* UILibrary */ = {
 			isa = PBXGroup;
 			children = (
-				9FAA0B9126B69AE90035532F /* InfiniteLoop */,
 				9FDDCEC726B5303F0008C20B /* AppDelegate.swift */,
 				9FDDCED226B530400008C20B /* LaunchScreen.storyboard */,
 				9FDDCEE826B533EF0008C20B /* Base */,
 				9FDDCF0526B539340008C20B /* Main */,
+				9FAA0B9126B69AE90035532F /* InfiniteLoop */,
 				9FAA0B7726B53CEA0035532F /* KeyboardPicker */,
+				9F6CD13226BBCB480037F8EA /* ThanosButton */,
 				9FDDCEDF26B531330008C20B /* Resource */,
 			);
 			path = UILibrary;
@@ -348,9 +392,13 @@
 			files = (
 				9FAA0B8726B547840035532F /* KeyboardPickerDemoViewController.swift in Sources */,
 				9FAA0B8D26B693730035532F /* KeyboardDatePickerView.swift in Sources */,
+				9F6CD13C26BBCC370037F8EA /* ThanosButtonDemoView.swift in Sources */,
+				9F6CD13826BBCB7C0037F8EA /* ThanosButton.swift in Sources */,
 				9FDDCEF426B534BB0008C20B /* MainView.swift in Sources */,
+				9F6CD13926BBCB7C0037F8EA /* ThanosButtonStyleTemplete.swift in Sources */,
 				9FAA0BA026B6A77B0035532F /* InfiniteLoopDemoCell.swift in Sources */,
 				9FAA0B9626B69B3C0035532F /* InfiniteLoopView.swift in Sources */,
+				9F6CD13F26BBCC440037F8EA /* ThanosButtonDemoViewController.swift in Sources */,
 				9FAA0BA326B6A9520035532F /* InfiniteLoopDemoViewController.swift in Sources */,
 				9FAA0B8126B53F300035532F /* KeyboardPickerView.swift in Sources */,
 				9FAA0B9926B6A6C60035532F /* InfiniteLoopDemoView.swift in Sources */,
