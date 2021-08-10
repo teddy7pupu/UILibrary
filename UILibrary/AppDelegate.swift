@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         door?.makeKeyAndVisible()
         door?.rootViewController = UINavigationController.init(rootViewController: MainViewController())
         
+        UserDefaults.standard.setValue(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
+        
         return true
     }
 }
