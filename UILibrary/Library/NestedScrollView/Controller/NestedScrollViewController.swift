@@ -45,11 +45,7 @@ class NestedScrollViewController: BaseViewController {
         
         view.addSubview(nestedScrollView)
         nestedScrollView.snp.makeConstraints { (make) in
-            if #available(iOS 11.0, *) {
-                make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
-            } else {
-                make.top.equalToSuperview()
-            }
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
             make.right.left.bottom.equalToSuperview()
         }
         
@@ -105,6 +101,7 @@ extension NestedScrollViewController {
         }
         
         required init?(coder: NSCoder) {
+            
             fatalError("init(coder:) has not been implemented")
         }
         
