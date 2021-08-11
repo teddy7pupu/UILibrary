@@ -15,6 +15,11 @@ class ThanosButtonDemoViewController: BaseViewController {
     // property
 
     // Life cycle
+    override func loadView() {
+        
+        view = thanosButtonDemoView
+    }
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -28,7 +33,6 @@ private extension ThanosButtonDemoViewController {
         
     func configer() {
         
-        view = thanosButtonDemoView
     }
 }
 

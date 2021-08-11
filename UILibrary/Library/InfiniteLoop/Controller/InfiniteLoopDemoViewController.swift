@@ -16,6 +16,11 @@ class InfiniteLoopDemoViewController: BaseViewController {
     private let dataSource: [UIColor] = [.blue, .yellow, .brown]
 
     // Life cycle
+    override func loadView() {
+        
+        view = infiniteLoopDemoView
+    }
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -28,8 +33,6 @@ class InfiniteLoopDemoViewController: BaseViewController {
 private extension InfiniteLoopDemoViewController {
         
     func configer() {
-        
-        view = infiniteLoopDemoView
         
         infiniteLoopDemoView.infiniteLoopView.inputDatas = dataSource
     }

@@ -16,6 +16,11 @@ class PermissionDemoViewController: BaseViewController {
     private lazy var permissionManager = PermissionManager(ownerVC: self, gpsIsRepeats: false)
 
     // Life cycle
+    override func loadView() {
+        
+        view = permissionDemoView
+    }
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -28,8 +33,6 @@ class PermissionDemoViewController: BaseViewController {
 private extension PermissionDemoViewController {
         
     func configer() {
-        
-        view = permissionDemoView
         
         permissionDemoView.cameraBtn.addTarget(self, action: #selector(tapCamera), for: .touchUpInside)
         permissionDemoView.scanBtn.addTarget(self, action: #selector(tapScan), for: .touchUpInside)

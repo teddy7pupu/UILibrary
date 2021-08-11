@@ -23,6 +23,11 @@ class KeyboardPickerDemoViewController: BaseViewController {
     private let maxDate = Date().adding(.day, value: 5)
     
     // Life cycle
+    override func loadView() {
+        
+        view = keyboardPickerDemoView
+    }
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -35,8 +40,6 @@ class KeyboardPickerDemoViewController: BaseViewController {
 private extension KeyboardPickerDemoViewController {
         
     func configer() {
-        
-        view = keyboardPickerDemoView
         
         keyboardPickerDemoView.normalField.delegate = self
         keyboardPickerDemoView.yearField.delegate = self

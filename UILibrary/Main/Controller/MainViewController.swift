@@ -22,6 +22,11 @@ class MainViewController: BaseViewController {
     ]
 
     // Life cycle
+    override func loadView() {
+        
+        view = mainView
+    }
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -34,8 +39,6 @@ class MainViewController: BaseViewController {
 private extension MainViewController {
         
     func configer() {
-        
-        view = mainView
         
         title = "Teddy"
         
